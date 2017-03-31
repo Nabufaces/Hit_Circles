@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from TryCatchBlockSorter$1Service WSDL service -->
+
+  <service name="TryCatchBlockSorter$1" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://commons.asm.objectweb.org"/>
+      <parameter name="wsdlServiceElement" value="TryCatchBlockSorter$1Service"/>
+      <parameter name="schemaQualified" value="http://commons.asm.objectweb.org"/>
+      <parameter name="wsdlServicePort" value="TryCatchBlockSorter$1"/>
+      <parameter name="className" value="org.objectweb.asm.commons.TryCatchBlockSorter$1"/>
+      <parameter name="wsdlPortType" value="TryCatchBlockSorter$1"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://commons.asm.objectweb.org" xmlns:retNS="http://commons.asm.objectweb.org" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="compare" qname="operNS:compare" returnQName="retNS:compareReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://commons.asm.objectweb.org" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:in0" type="tns:anyType"/>
+        <parameter xmlns:pns="http://commons.asm.objectweb.org" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:in1" type="tns:anyType"/>
+      </operation>
+      <parameter name="allowedMethods" value="compare"/>
+
+      <typeMapping xmlns:ns="http://commons.asm.objectweb.org" qname="ns:&gt;compareResponse" type="java:org.objectweb.asm.commons.CompareResponse" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+  </service>
+</deployment>

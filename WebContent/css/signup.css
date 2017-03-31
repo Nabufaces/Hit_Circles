@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+.signup_kuang{position:absolute; left:0; top:0; width:300px; height:320px; padding-left:38px;
+		background:#ffffff;}
+.signup_kuang h1{ font:16px/70px "微软雅黑", "黑体"; color:#000000; width:270px; 
+		 padding-left:85px;}
+input.signup_userID{ width:220px; height:28px; border:1px solid #dddddd; background:
+			url(../images/userID.jpg) no-repeat #ffffff left;
+		 line-height:32px; padding-left:18px; color:#b1a9a9;  margin-bottom:10px; }
+input.signup_password{ width:220px; height:28px; border:1px solid #dddddd; background:
+			url(../images/password.jpg) no-repeat #ffffff left;
+		 line-height:32px; padding-left:18px; color:#b1a9a9;  margin-bottom:10px; }
+input.signup_tellphone{ width:220px; height:28px; border:1px solid #dddddd; background:
+			url(../images/tellphone.png) no-repeat #ffffff left;
+		 line-height:32px; padding-left:18px; color:#b1a9a9;  margin-bottom:20px; }
+input.signup_butt{ width:220px; height:33px; background:#37b5f9; font-size:14px;
+ line-height:33px; text-align:center; border:0px; color:#fff; border-radius:3px; cursor:pointer;}
